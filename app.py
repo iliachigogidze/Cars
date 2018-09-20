@@ -103,7 +103,8 @@ weights_path = '/trained_model/mask_rcnn_plate_0010.h5'
 # Load weights
 print("Loading weights... ", weights_path)
 print('OS Dirrrrrrrrrrrrrrrrrrrrrrrrrrrrr: ', os.path)
-model.load_weights(weights_path, by_name=True)
+print(os.path.join(weights_path, '/trained_model/mask_rcnn_plate_0010.h5')
+model.load_weights(os.path.join(weights_path, '/trained_model/mask_rcnn_plate_0010.h5'), by_name=True)
 
 
 @app.route('/hello', methods=['POST'])
