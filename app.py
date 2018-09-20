@@ -103,8 +103,9 @@ weights_path = '/trained_model/mask_rcnn_plate_0010.h5'
 # Load weights
 print("Loading weights... ", weights_path)
 print('OS Dirrrrrrrrrrrrrrrrrrrrrrrrrrrrr: ', os.path)
-print(os.path.join(weights_path, '/trained_model/mask_rcnn_plate_0010.h5'))
+print('ragacaaaaa :', os.path.join(weights_path, '/trained_model/mask_rcnn_plate_0010.h5'))
 w_path = os.path.join(weights_path, '/trained_model/mask_rcnn_plate_0010.h5')
+print('w_paaaaath : ', os.path.join(weights_path, '/trained_model/mask_rcnn_plate_0010.h5'))
 model.load_weights(w_path, by_name=True)
 
 
