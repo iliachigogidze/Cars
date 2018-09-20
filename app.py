@@ -7,9 +7,9 @@ import time
 import numpy as np
 import tensorflow as tf
 import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
-matplotlib.use('Agg')
 import skimage
 import cv2
 from flask import request
