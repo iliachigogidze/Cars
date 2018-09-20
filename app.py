@@ -87,7 +87,9 @@ config.display()
 # Create model in inference mode
 #############################################################
 #with tf.device(DEVICE):
+print('OPAAA')
 model = modellib.MaskRCNN(mode="inference", model_dir=MODEL_DIR, config=config)
+print('OPAAA2')
 
 
 #############################################################
@@ -95,6 +97,7 @@ model = modellib.MaskRCNN(mode="inference", model_dir=MODEL_DIR, config=config)
 #############################################################
 # Set path to plate weights file
 #weights_path = os.path.join(ROOT_DIR, "/trained_model/mask_rcnn_plate_0002.h5")
+print('OPAAA3')
 
 weights_path = '/trained_model/mask_rcnn_plate_0010.h5'
 # Load weights
