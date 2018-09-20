@@ -96,7 +96,7 @@ print('Chaitvirta MASKRCNN !!!!!!!!!!!!!!')
 # Set path to plate weights file
 #weights_path = os.path.join(ROOT_DIR, "/trained_model/mask_rcnn_plate_0002.h5")
 
-weights_path = '/trained_model/mask_rcnn_plate_0010.h5'
+weights_path = 'trained_model/mask_rcnn_plate_0010.h5'
 # Load weights
 print("Loading weights... ", weights_path)
 model.load_weights(weights_path, by_name=True)
