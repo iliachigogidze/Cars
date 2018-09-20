@@ -525,10 +525,10 @@ def save_image(image, image_name, boxes, masks, class_ids, scores, class_names, 
     mode_list = [0, 1, 2, 3]
     assert mode in mode_list, "mode's value should in mode_list %s" % str(mode_list)
 
-    if save_dir is None:
-        save_dir = os.path.join(os.getcwd(), "output")
-        if not os.path.exists(save_dir):
-            os.makedirs(save_dir)
+    # if save_dir is None:
+    #     save_dir = os.path.join(os.getcwd(), "output")
+    #     if not os.path.exists(save_dir):
+    #         os.makedirs(save_dir)
 
     useful_mask_indices = []
 
